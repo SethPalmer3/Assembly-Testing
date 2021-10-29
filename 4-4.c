@@ -40,6 +40,17 @@ void opt_transpose(array_t a){
 
 int main(int argc, char const *argv[])
 {
-	//array_t test = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}
+	array_t test = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
+	opt_transpose(test);
+	for (int i = 0; i < N; ++i)
+	{
+		printf("{");
+		for (int j = 0; j < N; ++j)
+		{
+			printf("%ld, ", test[i][j]);
+		}
+		printf("}, ");
+	}
+	printf("\n");
 	return 0;
 }
